@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0" 
+    />
+    <title>Portfolio Website - Dhruv Bhatt</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
+<div id="header">
+    <div class="container header-flex">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-left">
+        <p>Software Engineer | Cloud Computing Enthusiast</p>
+        <h1>
+          Hi, I'm <span>Dhruv</span><br />
+          Bhatt from Tempe, Arizona
+        </h1>
+      </div>
+      <div class="header-right">
+        <img src="images/user.png" alt="Dhruv Bhatt" />
+      </div>
+    </div>
+  </div>
+  
+
+<!-- ================= ABOUT ================= -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- Make sure you have an image in ./images/user.png -->
+                <img src="images/background.png" alt="Profile Image" />
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                  Software Engineering intern with expertise in cloud computing,
+                  scalable distributed systems, and high-performance computing.
+                  Skilled in AWS, Kubernetes, Docker, CI/CD, and cloud-native
+                  architectures, with experience in parallel computing, debugging,
+                  and performance optimization.
+                </p>
+
+                <!-- TAB LINKS -->
+                <div class="tab-titles">
+                    <p 
+                        class="tab-links active-link" 
+                        onclick="opentab('skills')"
+                    >
+                        Skills
+                    </p>
+                    <p 
+                        class="tab-links" 
+                        onclick="opentab('experience')"
+                    >
+                        Experience
+                    </p>
+                    <p 
+                        class="tab-links" 
+                        onclick="opentab('education')"
+                    >
+                        Education
+                    </p>
+                </div>
+
+                <!-- TAB CONTENTS -->
+                <!-- SKILLS -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>Cloud & DevOps</span><br />
+                            AWS, Docker, Kubernetes, Terraform, CI/CD
+                        </li>
+                        <li>
+                            <span>Web Development</span><br />
+                            React.js, Next.js, Express.js, Tailwind CSS
+                        </li>
+                        <li>
+                            <span>Backend Development</span><br />
+                            Django, Spring Boot, Node.js, RESTful APIs
+                        </li>
+                        <li>
+                            <span>Databases</span><br />
+                            PostgreSQL, MySQL, DynamoDB, Redis
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- EXPERIENCE -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>June 2023 - Present</span><br />
+                            Guest Services Associate at Memorial Union, ASU
+                        </li>
+                        <li>
+                            <span>Feb 2021 - Jan 2023</span><br />
+                            IT Intern at Expandus Consulting Pvt. Ltd.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- EDUCATION -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>Jan 2023 - May 2026 (Expected)</span><br />
+                            B.S. in Computer Science, Arizona State University
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= SKILLS (previously services) ================= -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-cloud"></i>
+                <h2>Cloud Computing</h2>
+                <p>
+                    Expertise in AWS services like Lambda, Kinesis, S3,
+                    API Gateway, DynamoDB, and CloudWatch.
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-server"></i>
+                <h2>Backend Development</h2>
+                <p>
+                    Experience in microservices architecture, 
+                    Django, Spring Boot, and RESTful API development.
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2>Databases & Storage</h2>
+                <p>
+                    Experience with PostgreSQL, MySQL, DynamoDB, 
+                    and caching with Redis.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PROJECTS (previously portfolio) ================= -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+
+            <!-- PROJECT #1 -->
+            <div class="work">
+                <!-- Make sure you have an image in ./images/work-1.png -->
+                <img src="images/work-1.png" alt="Project Image" />
+                <div class="layer">
+                    <h3>Course Management System</h3>
+                    <p>
+                        Developed a React.js-based web application with Redux, AWS S3,
+                        and Lambda for serverless operations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROJECT #2 -->
+            <div class="work">
+                <!-- Make sure you have an image in ./images/work-2.png -->
+                <img src="images/work-2.png" alt="Project Image" />
+                <div class="layer">
+                    <h3>Real-Time E-commerce Recommendation System</h3>
+                    <p>
+                        Designed a recommendation system using 
+                        Amazon Kinesis, Lambda, and Personalize.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <!-- CONTACT LEFT -->
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> dbhatt24@asu.edu</p>
+                <p><i class="fas fa-phone"></i> (480) 919 6606</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <!-- Make sure you have "res2.pdf" in the same directory or correct path -->
+                <a href="res2.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <!-- CONTACT RIGHT -->
+            <div class="contact-right">
+                <form action="https://formsubmit.co/dhruvbhatt2209@gmail.com" method="POST">
+                  <!-- Hidden config fields -->
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_template" value="box">
+                  
+                  <!-- User inputs -->
+                  <input type="text" name="Name" placeholder="Your Name" required />
+                  <input 
+                    type="email" 
+                    name="Email" 
+                    placeholder="Your Email" 
+                    required 
+                  />
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                  ></textarea>
+                  
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                
+                <!-- Feedback message -->
+                <span id="msg"></span>
+              </div>              
+        </div>
+    </div>
+
+    <!-- COPYRIGHT INFO -->
+    <div class="copyright">
+        <p>
+            Copyright © 
+            <span style="font-weight: bold;">Dhruv Bhatt.</span> 
+            All rights reserved.
+        </p>
+    </div>
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Tab Functionality -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (const tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (const tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- Sidemenu Functionality -->
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const msg = document.getElementById("msg");
+  
+    // Optional: show a fake success message after form is submitted
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function () {
+      msg.innerHTML = "Message sent successfully!";
+      setTimeout(() => {
+        msg.innerHTML = "";
+      }, 5000);
+    });
+  </script>
+
+</body>
+</html>
